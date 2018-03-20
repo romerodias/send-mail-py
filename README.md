@@ -1,6 +1,7 @@
 # send-mail-py
 Python Class to Send E-mail
 
+
 ### usage
 #### send e-mail with no authentication 
 ```python
@@ -27,5 +28,5 @@ sm.smtp_port=587
 sm.smtp_password='password'
 sm.smtp_from='username'
 
-sm.send_mail('romero.dias@omnilink.com.br', , "Subject", "Message")
+sm.send_mail('romero.dias@omnilink.com.br', "Subject", "Message")
 ```
