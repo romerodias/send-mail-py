@@ -23,4 +23,4 @@ class SendMail:
 			print(inst.args)     
 			print(inst)
 		finally:
-				server.close()				
+			server.close()				
