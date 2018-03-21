@@ -1,6 +1,7 @@
 import smtplib
 
 class SendMail:
+	
 	smtp_server=''
 	smtp_port=25
 	smtp_password=''
@@ -15,10 +16,11 @@ class SendMail:
 				server.starttls()
 				server.ehlo()
 				server.login(self.smtp_from, self.smtp_password)
-				message = "Subject: " + subject + "\n\n" + msg
-				server.sendmail(self.smtp_from, toaddr, message)
-				server.close()
+			message = "Subject: " + subject + "\n\n" + msg
+			server.sendmail(self.smtp_from, toaddr, message)
 		except Exception as inst:
 			print(type(inst))     
 			print(inst.args)     
 			print(inst)
+		finally:
+				server.close()				
