@@ -13,7 +13,7 @@ sm.smtp_server='smtp.domain.com.br'
 sm.smtp_port=25
 sm.smtp_from='acount@domain.com.br'
 
-sm.send_mail('romero@omnilink.com.br', "Subject", "Message")
+sm.send_mail('romero@outlook.com', "Subject", "Message")
 ```
 
 
@@ -28,5 +28,5 @@ sm.smtp_port=587
 sm.smtp_password='password'
 sm.smtp_from='username'
 
-sm.send_mail('romero.dias@omnilink.com.br', "Subject", "Message")
+sm.send_mail('romero@outlook.com', "Subject", "Message")
 ```
